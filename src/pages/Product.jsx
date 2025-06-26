@@ -10,6 +10,7 @@ function Product() {
   const [category, setCategory] = useState([]);
   const navigate = useNavigate();
   useEffect(() => {
+    window.scrollTo(0,0);
     Object.values(supplements.categories).forEach((arr) => {
       arr.forEach((item) => {
         if (item.id === productId){ 
