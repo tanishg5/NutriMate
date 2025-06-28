@@ -30,6 +30,14 @@ export const filterSlice = createSlice({
         },
         setSortBy: (state , action)=> {
             state.SortBy = action.payload;
+        },
+        setClear: (state , action) => {
+           state.Category =null , 
+           state.Brand  = null, 
+           state.Min = null, 
+           state.Max  = null,
+           state.Rating = null , 
+           state.SortBy = null
         }
      }
 })
@@ -40,7 +48,8 @@ export const {
   setMin,
   setMax,
   setRating,
-  setSortBy
+  setSortBy,
+  setClear,
 } = filterSlice.actions
 
 export default filterSlice.reducer

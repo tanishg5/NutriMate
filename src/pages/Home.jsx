@@ -13,7 +13,7 @@ function Home() {
     <Categories/>
     <NewArrival/>
     <NewsLetter/>
-    <Footer/>
+   {/* // <Footer/> */}
     </>
   )
 }

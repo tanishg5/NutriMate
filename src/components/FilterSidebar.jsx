@@ -5,7 +5,7 @@ import {
   setMin,
   setMax,
   setRating,
-  setSortBy
+  setSortBy,setClear
 } from "./Redux/FilterSlice"
 
 export default function FilterSidebar() {
@@ -36,13 +36,13 @@ export default function FilterSidebar() {
         <div className="mb-6">
           <h3 className="font-semibold mb-2">Price Range</h3>
           <input
-            onChange={()=>dispatch(setMin(e.target.value))}
+            onChange={(e)=>dispatch(setMin(e.target.value))}
             type="number"
             placeholder="Min"
             className="border px-2 py-1 rounded w-full mb-2"
           />
           <input
-            onChange={()=>dispatch(setMax(e.target.value))}
+            onChange={(e)=>dispatch(setMax(e.target.value))}
             type="number"
             placeholder="Max"
             className="border px-2 py-1 rounded w-full"
@@ -60,16 +60,16 @@ export default function FilterSidebar() {
         {/* Sort (optional) */}
         <div className="mb-6">
           <h3 className="font-semibold mb-2">Sort By</h3>
-          <select onChange={()=>dispatch(setSortBy(e.target.value))} className="border px-2 py-1 rounded w-full">
+          <select onChange={(e)=>dispatch(setSortBy(e.target.value))} className="border px-2 py-1 rounded w-full">
             <option>None</option>
             <option>Price Low to High</option>
             <option>Price High to Low</option>
-            <option>Popularity</option>
           </select>
         </div>
   
         {/* Clear */}
-        <button className="bg-red-500 text-white px-4 py-2 rounded mt-4 hover:bg-red-600 w-full">
+        <button onClick={()=>dispatch(setClear()
+        )} className="bg-red-500 text-white px-4 py-2 rounded mt-4 hover:bg-red-600 w-full">
           Clear Filters
         </button>
       </aside>
