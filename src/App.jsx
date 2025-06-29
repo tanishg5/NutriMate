@@ -9,6 +9,9 @@ import Cart from "./pages/Cart"
 import Navbar from "./components/Navbar"
 import Product from "./pages/Product"
 import Footer from "./components/Footer"
+import Checkout from "./pages/Checkout"
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 function App() {
   return (
     <>
@@ -19,9 +22,11 @@ function App() {
          <Route path="/about-us" element= { <AboutUs/> }></Route>
          <Route path="/contact" element= { <ContactUs/> }></Route>
          <Route path="/cart" element= { <Cart/> }></Route>
-         <Route path = "/product" element={<Product/>}/>
+      {/* //   <Route path = "/product" element={<Product/>}/> */}
          <Route path="/product/:productId" element={<Product/>}/>
+         <Route path = "/checkout" element={<Checkout/>}></Route>
        </Routes>
+        <ToastContainer position="top-right" autoClose={3000} />
        <Footer/>
     </>
   )

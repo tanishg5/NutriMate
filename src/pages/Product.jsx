@@ -3,12 +3,19 @@ import { useParams } from "react-router";
 import { supplements } from "../assets/supplements";
 import { FaArrowRight, FaStar } from "react-icons/fa";
 import { useNavigate } from "react-router";
+import { useDispatch } from "react-redux";
+import { toast } from "react-toastify";
+import {
+  Setcartitems
+} from '../components/Redux/CartSlice'
 function Product() {
+  //toast.configure();
   const { productId } = useParams();
   const [products, setProducts] = useState({});
   const [active, setActive] = useState('description');
   const [category, setCategory] = useState([]);
   const navigate = useNavigate();
+  const dispatch = useDispatch();
   useEffect(() => {
     window.scrollTo(0,0);
     Object.values(supplements.categories).forEach((arr) => {
@@ -20,7 +27,10 @@ function Product() {
       });
     });
   }, [productId]);
-
+ const handleAddToCart = () => {
+    dispatch(Setcartitems(products)); // You can now safely call dispatch
+    toast.success("Added to cart!");
+  };
   return (
     <div className="container mx-auto px-4 py-8 max-w-7xl">
       {/* Breadcrumb Navigation */}
@@ -88,7 +98,7 @@ function Product() {
             </div>
           </div>
 
-          <button className="w-full bg-green-600 hover:bg-green-700 text-white font-medium py-3 px-4 rounded-lg mt-4 transition-colors">
+          <button onClick={handleAddToCart} className="w-full bg-green-600 hover:bg-green-700 text-white font-medium py-3 px-4 rounded-lg mt-4 transition-colors">
             ADD TO CART
           </button>
         </div>

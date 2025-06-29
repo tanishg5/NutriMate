@@ -9,12 +9,13 @@ function Shop() {
   const navigate = useNavigate();
 
   // matching your initialState capital keys
-  const category = useSelector(state => state.Category);
-  const brand = useSelector(state => state.Brand);
-  const min = useSelector(state => state.Min);
-  const max = useSelector(state => state.Max);
-  const rating = useSelector(state => state.Rating);
-  const sortby = useSelector(state => state.SortBy);
+const category = useSelector(state => state.filters.Category);
+const brand = useSelector(state => state.filters.Brand);
+const min = useSelector(state => state.filters.Min);
+const max = useSelector(state => state.filters.Max);
+const rating = useSelector(state => state.filters.Rating);
+const sortby = useSelector(state => state.filters.SortBy);
+
 
   // flatten supplements
   const allSupplements = Object.entries(supplements.categories).flatMap(
