@@ -10,6 +10,7 @@ export const supplements = {
         nutrition: { protein: "24g", calories: "120", carbs: "3g", fat: "1g" },
         description: "World's best-selling whey protein blend.",
         rating: 4.8,
+        category : "protein"
       },
       {
         id: "protein_mb_01",
@@ -20,6 +21,7 @@ export const supplements = {
         nutrition: { protein: "25g", calories: "130", carbs: "4g", fat: "1.5g" },
         description: "Labdoor-certified premium whey isolate.",
         rating: 4.6,
+        category : "protein"
       },
       {
         id: "protein_bm_01",
@@ -30,6 +32,7 @@ export const supplements = {
         nutrition: { protein: "24g", calories: "122", carbs: "2g", fat: "1g" },
         description: "Unflavoured raw whey protein.",
         rating: 4.4,
+        category : "protein"
       },
       {
         id: "protein_av_01",
@@ -40,6 +43,7 @@ export const supplements = {
         nutrition: { protein: "24g", calories: "125", carbs: "2.5g", fat: "1.5g" },
         description: "Natural whey with rich amino profile.",
         rating: 4.3,
+        category : "protein"
       },
       {
         id: "protein_on_02",
@@ -50,6 +54,7 @@ export const supplements = {
         nutrition: { protein: "24g", calories: "130", carbs: "5g", fat: "2g" },
         description: "Advanced blend for muscle building.",
         rating: 4.6,
+        category : "protein"
       },
       {
         id: "protein_mb_02",
@@ -60,6 +65,7 @@ export const supplements = {
         nutrition: { protein: "25g", calories: "127", carbs: "3g", fat: "1.8g" },
         description: "Clinically tested protein absorption.",
         rating: 4.5,
+        category : "protein"
       },
       {
         id: "protein_bm_02",
@@ -70,6 +76,7 @@ export const supplements = {
         nutrition: { protein: "22g", calories: "135", carbs: "2g", fat: "1.5g" },
         description: "Whey blend for enhanced strength.",
         rating: 4.2,
+        category : "protein"
       },
       {
         id: "protein_av_02",
@@ -80,6 +87,7 @@ export const supplements = {
         nutrition: { protein: "25g", calories: "128", carbs: "2.2g", fat: "1.6g" },
         description: "High-quality elite athlete whey.",
         rating: 4.3,
+        category : "protein"
       },
       {
         id: "protein_on_03",
@@ -90,6 +98,7 @@ export const supplements = {
         nutrition: { protein: "30g", calories: "140", carbs: "2g", fat: "1g" },
         description: "Hydrolyzed whey for ultra-fast absorption.",
         rating: 4.7,
+        category : "protein"
       },
       {
         id: "protein_mb_03",
@@ -100,6 +109,7 @@ export const supplements = {
         nutrition: { protein: "24g", calories: "118", carbs: "2g", fat: "1g" },
         description: "Unflavored, pure whey for budget users.",
         rating: 4.4,
+        category : "protein"
       }
     ],
 
@@ -117,6 +127,7 @@ export const supplements = {
         },
         description: "Energy and performance boost for intense training.",
         rating: 4.5,
+        category : "pre-post-workout"
       },
       {
         id: "pre_mb_01",
@@ -131,6 +142,7 @@ export const supplements = {
         },
         description: "High stimulant formula to improve focus and power.",
         rating: 4.3,
+        category : "pre-post-workout"
       },
       {
         id: "pre_bm_01",
@@ -145,6 +157,7 @@ export const supplements = {
         },
         description: "Explosive energy and endurance support.",
         rating: 4.1,
+        category : "pre-post-workout"
       },
       {
         id: "pre_av_01",
@@ -159,6 +172,7 @@ export const supplements = {
         },
         description: "Fuel your workouts with natural ingredients.",
         rating: 4.0,
+        category : "pre-post-workout"
       },
       {
         id: "post_on_01",
@@ -172,6 +186,7 @@ export const supplements = {
         },
         description: "Recovery and energy with amino acids.",
         rating: 4.4,
+        category : "pre-post-workout"
       },
       {
         id: "post_mb_01",
@@ -185,6 +200,7 @@ export const supplements = {
         },
         description: "Post-workout drink with balanced recovery blend.",
         rating: 4.2,
+        category : "pre-post-workout"
       },
       {
         id: "post_bm_01",
@@ -198,6 +214,7 @@ export const supplements = {
         },
         description: "Carb-protein mix to recharge post-training.",
         rating: 4.0,
+        category : "pre-post-workout"
       },
       {
         id: "post_av_01",
@@ -211,6 +228,7 @@ export const supplements = {
         },
         description: "Designed to support muscle growth and recovery.",
         rating: 4.1,
+        category : "pre-post-workout"
       },
       {
         id: "pre_on_02",
@@ -224,6 +242,7 @@ export const supplements = {
         },
         description: "Dual-purpose pre and intra-workout formula.",
         rating: 4.3,
+        category : "pre-post-workout"
       },
       {
         id: "pre_mb_02",
@@ -237,6 +256,7 @@ export const supplements = {
         },
         description: "Advanced formula for elite training sessions.",
         rating: 4.4,
+        category : "pre-post-workout"
       }
     ],  
     creatine: [
@@ -248,7 +268,8 @@ export const supplements = {
         price: 999,
         nutrition: { creatine: "5g" },
         description: "Pure, micronized creatine for strength and endurance.",
-        rating: 4.7
+        rating: 4.7,
+        category : "creatine"
       },
       {
         id: "creatine_mb_01",
@@ -258,7 +279,8 @@ export const supplements = {
         price: 799,
         nutrition: { creatine: "3g" },
         description: "Supports strength gains and lean muscle mass.",
-        rating: 4.6
+        rating: 4.6,
+        category : "creatine"
       },
       {
         id: "creatine_bm_01",
@@ -268,7 +290,8 @@ export const supplements = {
         price: 899,
         nutrition: { creatine: "5g" },
         description: "High-quality creatine for advanced training.",
-        rating: 4.3
+        rating: 4.3,
+        category : "creatine"
       },
       {
         id: "creatine_av_01",
@@ -278,7 +301,8 @@ export const supplements = {
         price: 849,
         nutrition: { creatine: "3.5g" },
         description: "Micronized creatine to improve muscle strength.",
-        rating: 4.2
+        rating: 4.2,
+        category : "creatine"
       },
       {
         id: "creatine_mb_02",
@@ -288,7 +312,8 @@ export const supplements = {
         price: 999,
         nutrition: { creatine: "5g" },
         description: "Creapure creatine for best-in-class results.",
-        rating: 4.5
+        rating: 4.5,
+        category : "creatine"
       }
     ],
 
@@ -304,7 +329,8 @@ export const supplements = {
           minerals: "Zinc, Magnesium"
         },
         description: "Comprehensive nutritional support for active men.",
-        rating: 4.5
+        rating: 4.5,
+        category : "multivitamin"
       },
       {
         id: "multi_mb_01",
@@ -317,7 +343,8 @@ export const supplements = {
           minerals: "Iron, Zinc"
         },
         description: "Daily formula to meet essential vitamin needs.",
-        rating: 4.2
+        rating: 4.2,
+        category : "multivitamin"
       },
       {
         id: "multi_bm_01",
@@ -330,7 +357,8 @@ export const supplements = {
           minerals: "Zinc, Selenium"
         },
         description: "Immune and performance support for fitness lovers.",
-        rating: 4.3
+        rating: 4.3,
+        category : "multivitamin"
       },
       {
         id: "multi_on_02",
@@ -343,7 +371,8 @@ export const supplements = {
           minerals: "Calcium, Zinc"
         },
         description: "Advanced nutritional support for active women.",
-        rating: 4.6
+        rating: 4.6,
+        category : "multivitamin"
       },
       {
         id: "multi_mb_02",
@@ -356,7 +385,8 @@ export const supplements = {
           minerals: "Iron, Calcium"
         },
         description: "Power-packed with herbs and essential nutrients.",
-        rating: 4.4
+        rating: 4.4,
+        category : "multivitamin"
       }
     ]
   }

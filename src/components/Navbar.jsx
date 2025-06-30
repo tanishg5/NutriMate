@@ -36,6 +36,15 @@ function Navbar() {
         </li>
         <li>
           <NavLink 
+            to="/compare" 
+            className="text-gray-600 hover:text-green-700 transition-colors"
+            activeClassName="text-green-700 font-medium"
+          >
+            Compare
+          </NavLink>
+        </li>
+        <li>
+          <NavLink 
             to="/about-us" 
             className="text-gray-600 hover:text-green-700 transition-colors"
             activeClassName="text-green-700 font-medium"

@@ -12,6 +12,8 @@ import Footer from "./components/Footer"
 import Checkout from "./pages/Checkout"
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Recommended from "./pages/Recommended"
+import Compare from "./pages/Compare"
 function App() {
   return (
     <>
@@ -19,6 +21,8 @@ function App() {
        <Routes>
          <Route path="/" element= { <Home/> }></Route>
          <Route path="/shop" element= { <Shop/> }></Route>
+         <Route path="/recommended" element= { <Recommended/> }></Route>
+         <Route path="/compare" element= { <Compare/> }></Route>
          <Route path="/about-us" element= { <AboutUs/> }></Route>
          <Route path="/contact" element= { <ContactUs/> }></Route>
          <Route path="/cart" element= { <Cart/> }></Route>
