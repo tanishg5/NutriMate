@@ -2,7 +2,6 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 
 function Checkout() {
-  window.scrollTo(0,0);
   const cart = useSelector(state => state.cart.cartitems);
   
   // Calculate totals overall price

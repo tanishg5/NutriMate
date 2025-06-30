@@ -7,8 +7,6 @@ import { useSelector } from "react-redux";
 
 function Shop() {
   const navigate = useNavigate();
-
-  // matching your initialState capital keys
 const category = useSelector(state => state.filters.Category);
 const brand = useSelector(state => state.filters.Brand);
 const min = useSelector(state => state.filters.Min);

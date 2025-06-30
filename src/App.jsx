@@ -14,10 +14,12 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Recommended from "./pages/Recommended"
 import Compare from "./pages/Compare"
+import ScrollToTop from "./components/ScrollToTop"
 function App() {
   return (
     <>
     <Navbar/>
+    <ScrollToTop/>
        <Routes>
          <Route path="/" element= { <Home/> }></Route>
          <Route path="/shop" element= { <Shop/> }></Route>
