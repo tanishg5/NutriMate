@@ -2,11 +2,12 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 
 function Checkout() {
+  window.scrollTo(0,0);
   const cart = useSelector(state => state.cart.cartitems);
   
-  // Calculate totals
+  // Calculate totals overall price
   const subtotal = cart.reduce((sum, item) => sum + (item.price * (item.quantity || 1)), 0);
-  const totalItems = cart.reduce((sum, item) => sum + (item.quantity || 1), 0);
+  const totalItems = cart.reduce((sum, item) => sum + (item.quantity || 1), 0);// total items contained
 
   return (
     <section className="max-w-4xl mx-auto p-6">
@@ -93,6 +94,7 @@ function Checkout() {
             
             {cart.map(item => (
               <div key={item.id} className="flex justify-between border-b pb-2">
+              {/* Individual Item Prices */}
                 <span>{item.name} × {item.quantity || 1}</span>
                 <span>₹{(item.price * (item.quantity || 1)).toFixed(2)}</span>
               </div>

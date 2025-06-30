@@ -6,7 +6,7 @@ import { useNavigate } from "react-router";
 import { useDispatch } from "react-redux";
 import { toast } from "react-toastify";
 import {
-  Setcartitems
+  Setcartitems,
 } from '../components/Redux/CartSlice'
 function Product() {
   //toast.configure();
@@ -28,7 +28,7 @@ function Product() {
     });
   }, [productId]);
  const handleAddToCart = () => {
-    dispatch(Setcartitems(products)); // You can now safely call dispatch
+    dispatch(Setcartitems(products));
     toast.success("Added to cart!");
   };
   return (
