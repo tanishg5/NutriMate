@@ -1,6 +1,8 @@
 import React from 'react';
 import { supplements } from '../assets/supplements';
+import { useNavigate } from 'react-router';
 function NewArrival() {
+  const navigate = useNavigate();
   return (
     <section className="py-16 px-4 sm:px-6 bg-gray-50">
       <div className="max-w-7xl mx-auto text-center mb-12">
@@ -17,6 +19,7 @@ function NewArrival() {
             >
               <div className="relative overflow-hidden h-56">
                 <img 
+                  onClick={()=>navigate(`/product/${item.id}`)}
                   src={item.image} 
                   alt={item.brand} 
                   className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
